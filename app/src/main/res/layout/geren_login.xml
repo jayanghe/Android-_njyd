@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<RelativeLayout
+    android:id="@+id/login_header"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#5CACEE" >
+
+         <TextView
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:padding="16dp"
+             android:text="个人登录"
+             android:textColor="#fff"
+             android:textSize="30sp" />
+     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/button1"
+        android:clickable="true"
+        android:text="注  册" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:ems="10"
+        android:hint="请输入用户名" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_below="@+id/checkBox1"
+        android:layout_marginTop="29dp"
+        android:background="#CDCDB4"
+        android:text="登录" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="35dp"
+        android:text="记住密码" />
+
+</RelativeLayout>
