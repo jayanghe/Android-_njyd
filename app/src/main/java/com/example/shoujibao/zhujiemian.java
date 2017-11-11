@@ -44,7 +44,7 @@ public class zhujiemian extends Activity implements OnClickListener {
 
 		initView();
 		update();
-		Toast.makeText(zhujiemian.this, "ˢ�³ɹ�", Toast.LENGTH_LONG).show();
+		Toast.makeText(zhujiemian.this, "刷新成功", Toast.LENGTH_LONG).show();
 
 	}
 

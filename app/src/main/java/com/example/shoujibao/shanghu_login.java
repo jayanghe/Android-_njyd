@@ -20,7 +20,7 @@ public class shanghu_login extends Activity implements OnClickListener {
 
 	private Button bt1;
 	private CheckBox ck1;
-	// ÉùÃ÷Ò»¸öSharedPreferences¶ÔÏóºÍÒ»¸öEditor¶ÔÏó
+	// å£°æ˜ä¸€ä¸ªSharedPreferenceså¯¹è±¡å’Œä¸€ä¸ªEditorå¯¹è±¡
 	private SharedPreferences preferences1;
 	private SharedPreferences.Editor editor;
 
@@ -72,13 +72,13 @@ public class shanghu_login extends Activity implements OnClickListener {
 		String xxpwd = "1221";
 
 		if (pwd.length() == 0 && name.length() == 0) {
-			Toast.makeText(getApplicationContext(), "ÃÜÂë»òÓÃ»§Ãû²»ÄÜÎª¿Õ", 1).show();
+			Toast.makeText(getApplicationContext(), "å¯†ç æˆ–ç”¨æˆ·åä¸èƒ½ä¸ºç©º", 1).show();
 
 		} else {
 
 			if (name.equals(xx) && pwd.equals(xxpwd)) {
 
-				Toast.makeText(getApplicationContext(), "ÉÌ»§ÓÃ»§", 1).show();
+				Toast.makeText(getApplicationContext(), "å•†æˆ·ç”¨æˆ·", 1).show();
 
 				AVUser.logInInBackground(name, pwd,
 						new LogInCallback<AVUser>() {
@@ -93,10 +93,10 @@ public class shanghu_login extends Activity implements OnClickListener {
 									Toast.makeText(shanghu_login.this,
 											"login success", 1).show();
 
-									// Èç¹ûÓÃ»§Ñ¡ÔñÁË¼Ç×¡ÓÃ»§Ãû
-									// ½«ÓÃ»§ÊäÈëµÄÓÃ»§Ãû´æÈë´¢´æÖĞ£¬¼üÎªuserName
-									// Èç¹ûÓÃ»§Ñ¡ÔñÁË¼Ç×¡ÃÜÂë
-									// ½«ÓÃ»§ÊäÈëµÄÃÜÂë´æÈë´¢´æÖĞ£¬¼üÎªuserName
+									// å¦‚æœç”¨æˆ·é€‰æ‹©äº†è®°ä½ç”¨æˆ·å
+									// å°†ç”¨æˆ·è¾“å…¥çš„ç”¨æˆ·åå­˜å…¥å‚¨å­˜ä¸­ï¼Œé”®ä¸ºuserName
+									// å¦‚æœç”¨æˆ·é€‰æ‹©äº†è®°ä½å¯†ç 
+									// å°†ç”¨æˆ·è¾“å…¥çš„å¯†ç å­˜å…¥å‚¨å­˜ä¸­ï¼Œé”®ä¸ºuserName
 									SharedPreferences.Editor editor;
 									preferences1 = getSharedPreferences(
 											"UserInfo", MODE_PRIVATE);
@@ -122,7 +122,7 @@ public class shanghu_login extends Activity implements OnClickListener {
 
 			else {
 
-				Toast.makeText(getApplicationContext(), "´ËÕËºÅ²»ÊÇÉÌ»§ÓÃ»§", 1).show();
+				Toast.makeText(getApplicationContext(), "æ­¤è´¦å·ä¸æ˜¯å•†æˆ·ç”¨æˆ·", 1).show();
 
 			}
 

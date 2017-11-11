@@ -22,7 +22,7 @@ public class geren_login extends Activity implements OnClickListener {
 
 	private Button bt1;
 	private CheckBox ck1;
-	// ÉùÃ÷Ò»¸öSharedPreferences¶ÔÏóºÍÒ»¸öEditor¶ÔÏó
+	// å£°æ˜ä¸€ä¸ªSharedPreferenceså¯¹è±¡å’Œä¸€ä¸ªEditorå¯¹è±¡
 	private SharedPreferences preferences;
 	private SharedPreferences.Editor editor;
 
@@ -82,10 +82,10 @@ public class geren_login extends Activity implements OnClickListener {
 				if (arg1 == null) {
 					Toast.makeText(geren_login.this, "login success", 1).show();
 
-					// Èç¹ûÓÃ»§Ñ¡ÔñÁË¼Ç×¡ÓÃ»§Ãû
-					// ½«ÓÃ»§ÊäÈëµÄÓÃ»§Ãû´æÈë´¢´æÖĞ£¬¼üÎªuserName
-					// Èç¹ûÓÃ»§Ñ¡ÔñÁË¼Ç×¡ÃÜÂë
-					// ½«ÓÃ»§ÊäÈëµÄÃÜÂë´æÈë´¢´æÖĞ£¬¼üÎªuserName
+					// å¦‚æœç”¨æˆ·é€‰æ‹©äº†è®°ä½ç”¨æˆ·å
+					// å°†ç”¨æˆ·è¾“å…¥çš„ç”¨æˆ·åå­˜å…¥å‚¨å­˜ä¸­ï¼Œé”®ä¸ºuserName
+					// å¦‚æœç”¨æˆ·é€‰æ‹©äº†è®°ä½å¯†ç 
+					// å°†ç”¨æˆ·è¾“å…¥çš„å¯†ç å­˜å…¥å‚¨å­˜ä¸­ï¼Œé”®ä¸ºuserName
 					SharedPreferences.Editor editor;
 					preferences = getSharedPreferences("UserInfo3",
 							MODE_PRIVATE);
@@ -96,7 +96,7 @@ public class geren_login extends Activity implements OnClickListener {
 					editor.commit();
 
 					startActivity(new Intent(geren_login.this, zhujiemian.class));
-					Toast.makeText(getApplicationContext(), "¸öÈËÓÃ»§Ä£Ê½", 1).show();
+					Toast.makeText(getApplicationContext(), "ä¸ªäººç”¨æˆ·æ¨¡å¼", 1).show();
 				    }
 				else {
 					Toast.makeText(getApplicationContext(), arg1.getMessage(),

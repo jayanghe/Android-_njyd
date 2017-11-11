@@ -94,7 +94,7 @@ public class admin extends Activity implements OnClickListener {
 					public void done(AVException arg0) {
 						// TODO Auto-generated method stub
 						if (arg0 == null) {
-							Toast.makeText(admin.this, "É¾³ı³É¹¦ ", 1).show();
+							Toast.makeText(admin.this, "åˆ é™¤æˆåŠŸ ", 1).show();
 							update();
 						}
 					}
@@ -120,7 +120,7 @@ public class admin extends Activity implements OnClickListener {
 
 		} else {
 			update();
-			Toast.makeText(admin.this, "Ë¢ĞÂ³É¹¦", Toast.LENGTH_LONG).show();
+			Toast.makeText(admin.this, "åˆ·æ–°æˆåŠŸ", Toast.LENGTH_LONG).show();
 		}
 	}
 
@@ -187,7 +187,7 @@ public class admin extends Activity implements OnClickListener {
 		String content = ((EditText) findViewById(R.id.editText2)).getText()
 				.toString();
 		if (title.length() == 0 || content.length() == 0) {
-			Toast.makeText(getApplicationContext(), "±êÌâ»òÄÚÈİ²»ÄÜÎª¿Õ", 1).show();
+			Toast.makeText(getApplicationContext(), "æ ‡é¢˜æˆ–å†…å®¹ä¸èƒ½ä¸ºç©º", 1).show();
 		} else {
 
 			AVObject news = new AVObject("news");
@@ -222,7 +222,7 @@ public class admin extends Activity implements OnClickListener {
 					if (arg0 == null) {
 						update();
 
-						Toast.makeText(admin.this, "·¢²¼³É¹¦", Toast.LENGTH_LONG)
+						Toast.makeText(admin.this, "å‘å¸ƒæˆåŠŸ", Toast.LENGTH_LONG)
 								.show();
 						// Toast.makeText(admin.this, "  ",
 						// Toast.LENGTH_LONG).show();

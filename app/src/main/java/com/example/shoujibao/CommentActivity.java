@@ -38,7 +38,7 @@ public class CommentActivity extends Activity implements OnClickListener {
 		setContentView(R.layout.activity_comment);
 		initView();
 		update();
-		Toast.makeText(CommentActivity.this, "刷新成功", Toast.LENGTH_LONG).show();
+		Toast.makeText(CommentActivity.this, "鍒锋柊鎴愬姛", Toast.LENGTH_LONG).show();
 	}
 
 	private void initView() {
@@ -51,7 +51,7 @@ public class CommentActivity extends Activity implements OnClickListener {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				update();
-				Toast.makeText(CommentActivity.this, "刷新成功", Toast.LENGTH_LONG)
+				Toast.makeText(CommentActivity.this, "鍒锋柊鎴愬姛", Toast.LENGTH_LONG)
 						.show();
 			}
 		});
@@ -114,7 +114,7 @@ public class CommentActivity extends Activity implements OnClickListener {
 		EditText comment = (EditText) findViewById(R.id.editText1);
 		String s = comment.getEditableText().toString();
 		if (s.length() == 0) {
-			Toast.makeText(getApplicationContext(), "评论不能为空", 1).show();
+			Toast.makeText(getApplicationContext(), "璇勮涓嶈兘涓虹┖", 1).show();
 		} else {
 			AVObject obj = new AVObject("comment");
 			String newsid = getIntent().getStringExtra("newsid");
@@ -122,7 +122,7 @@ public class CommentActivity extends Activity implements OnClickListener {
 			obj.put("content", s);
 			obj.saveInBackground();
 			update();
-			Toast.makeText(getApplicationContext(), "评论成功", 0).show();
+			Toast.makeText(getApplicationContext(), "璇勮鎴愬姛", 0).show();
 		}
 	}
 }

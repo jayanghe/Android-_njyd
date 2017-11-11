@@ -31,7 +31,7 @@ public class shcomment extends Activity {
 		setContentView(R.layout.shcomment);
 		initView();
 		update();
-		Toast.makeText(shcomment.this, "刷新成功", Toast.LENGTH_LONG).show();
+		Toast.makeText(shcomment.this, "鍒锋柊鎴愬姛", Toast.LENGTH_LONG).show();
 	}
 
 	private void initView() {
@@ -42,7 +42,7 @@ public class shcomment extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				update();
-				Toast.makeText(shcomment.this, "刷新成功", Toast.LENGTH_LONG)
+				Toast.makeText(shcomment.this, "鍒锋柊鎴愬姛", Toast.LENGTH_LONG)
 						.show();
 			}
 		});

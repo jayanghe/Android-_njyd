@@ -55,22 +55,22 @@ public class RegisterActivity extends Activity implements OnClickListener {
 		String email = et3.getText().toString();
 		if (pwd_sure.equals(pwd)) {
 
-			Toast.makeText(getApplicationContext(), "Á½´ÎÃÜÂëÒ»ÖÂ", 1).show();
-			AVUser user = new AVUser();// ĞÂ½¨ AVUser ¶ÔÏóÊµÀı
-			user.setUsername(name);// ÉèÖÃÓÃ»§Ãû
-			user.setPassword(pwd);// ÉèÖÃÃÜÂë
-			user.setEmail(email);// ÉèÖÃÓÊÏä
+			Toast.makeText(getApplicationContext(), "ä¸¤æ¬¡å¯†ç ä¸€è‡´", 1).show();
+			AVUser user = new AVUser();// æ–°å»º AVUser å¯¹è±¡å®ä¾‹
+			user.setUsername(name);// è®¾ç½®ç”¨æˆ·å
+			user.setPassword(pwd);// è®¾ç½®å¯†ç 
+			user.setEmail(email);// è®¾ç½®é‚®ç®±
 			user.signUpInBackground(new SignUpCallback() {
 				@Override
 				public void done(AVException e) {
 					if (e == null) {
-						// ×¢²á³É¹¦
-						Toast.makeText(getApplicationContext(), "×¢²á³É¹¦", 1)
+						// æ³¨å†ŒæˆåŠŸ
+						Toast.makeText(getApplicationContext(), "æ³¨å†ŒæˆåŠŸ", 1)
 								.show();
 						startActivity(new Intent(RegisterActivity.this,
 								geren_login.class));
 					} else {
-						// Ê§°ÜµÄÔ­Òò¿ÉÄÜÓĞ¶àÖÖ£¬³£¼ûµÄÊÇÓÃ»§ÃûÒÑ¾­´æÔÚ¡£
+						// å¤±è´¥çš„åŸå› å¯èƒ½æœ‰å¤šç§ï¼Œå¸¸è§çš„æ˜¯ç”¨æˆ·åå·²ç»å­˜åœ¨ã€‚
 						Toast.makeText(getApplicationContext(), e.getMessage(),
 								1).show();
 					}
@@ -78,7 +78,7 @@ public class RegisterActivity extends Activity implements OnClickListener {
 			});
 
 		} else {
-			Toast.makeText(getApplicationContext(), "Á½´ÎÃÜÂë²»Ò»ÖÂ£¬ÇëÖØĞÂÊäÈë", 1).show();
+			Toast.makeText(getApplicationContext(), "ä¸¤æ¬¡å¯†ç ä¸ä¸€è‡´ï¼Œè¯·é‡æ–°è¾“å…¥", 1).show();
 
 		}
 

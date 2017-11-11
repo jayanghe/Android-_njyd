@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/shoujibao/CommentActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/shoujibao/LoginActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/shoujibao/MainActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/shoujibao/MyApp.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/shoujibao/RegisterActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/shoujibao/admin.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/shoujibao/geren_login.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/shoujibao/shanghu_login.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/shoujibao/shcomment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/shoujibao/zhujiemian.java" charset="UTF-8" />
+  </component>
+</project>

@@ -112,7 +112,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 		} else {
 			update();
-			Toast.makeText(MainActivity.this, "Ë¢ĞÂ³É¹¦", Toast.LENGTH_LONG).show();
+			Toast.makeText(MainActivity.this, "åˆ·æ–°æˆåŠŸ", Toast.LENGTH_LONG).show();
 		}
 	}
 
@@ -179,7 +179,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		String content = ((EditText) findViewById(R.id.editText2)).getText()
 				.toString();
 		if (title.length() == 0 || content.length() == 0) {
-			Toast.makeText(getApplicationContext(), "±êÌâ»òÄÚÈİ²»ÄÜÎª¿Õ", 1).show();
+			Toast.makeText(getApplicationContext(), "æ ‡é¢˜æˆ–å†…å®¹ä¸èƒ½ä¸ºç©º", 1).show();
 		} else {
 
 			AVObject news = new AVObject("news");
@@ -214,7 +214,7 @@ public class MainActivity extends Activity implements OnClickListener {
 					if (arg0 == null) {
 						update();
 
-						Toast.makeText(MainActivity.this, "·¢²¼³É¹¦",
+						Toast.makeText(MainActivity.this, "å‘å¸ƒæˆåŠŸ",
 								Toast.LENGTH_LONG).show();
 						// Toast.makeText(MainActivity.this, "  ",
 						// Toast.LENGTH_LONG).show();

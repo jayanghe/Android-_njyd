@@ -9,9 +9,9 @@ public class MyApp extends Application {
 	public void onCreate() {
 		// TODO Auto-generated method stub
 		super.onCreate();
-		// 1. ³õÊ¼»¯AVOS Cloud
+		// 1. åˆå§‹åŒ–AVOS Cloud
 		AVOSCloud.initialize(this,
 		"XibaWU8DjJe5y8YRQF3HVHHm-gzGzoHsz","wUQNDHKVkCekz37qCd8o73PC");
-		//AVOSCloud.setDebugLogEnabled(true);//¿ªÆôµ÷ÊÔÈÕÖ¾
+		//AVOSCloud.setDebugLogEnabled(true);//å¼€å¯è°ƒè¯•æ—¥å¿—
 	}
 }

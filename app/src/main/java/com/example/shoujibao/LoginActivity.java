@@ -20,7 +20,7 @@ public class LoginActivity extends Activity implements OnClickListener {
 
 	private Button bt1;
 	private CheckBox ck1;
-	// ÉùÃ÷Ò»¸öSharedPreferences¶ÔÏóºÍÒ»¸öEditor¶ÔÏó
+	// å£°æ˜ä¸€ä¸ªSharedPreferenceså¯¹è±¡å’Œä¸€ä¸ªEditorå¯¹è±¡
 	private SharedPreferences preferences2;
 	private SharedPreferences.Editor editor;
 
@@ -72,11 +72,11 @@ public class LoginActivity extends Activity implements OnClickListener {
 		String xxpwd = "1221";
 
 		if (pwd.length() == 0 && name.length() == 0) {
-			Toast.makeText(getApplicationContext(), "ÃÜÂë»òÓÃ»§Ãû²»ÄÜÎª¿Õ", 1).show();
+			Toast.makeText(getApplicationContext(), "å¯†ç æˆ–ç”¨æˆ·åä¸èƒ½ä¸ºç©º", 1).show();
 
 		} else {
 			if (name.equals(admin) && pwd.equals(admin)) {
-				Toast.makeText(getApplicationContext(), "¹ÜÀíÔ±", 1).show();
+				Toast.makeText(getApplicationContext(), "ç®¡ç†å‘˜", 1).show();
 
 				AVUser.logInInBackground(name, pwd,
 						new LogInCallback<AVUser>() {
@@ -91,10 +91,10 @@ public class LoginActivity extends Activity implements OnClickListener {
 									Toast.makeText(LoginActivity.this,
 											"login success", 1).show();
 
-									// Èç¹ûÓÃ»§Ñ¡ÔñÁË¼Ç×¡ÓÃ»§Ãû
-									// ½«ÓÃ»§ÊäÈëµÄÓÃ»§Ãû´æÈë´¢´æÖĞ£¬¼üÎªuserName
-									// Èç¹ûÓÃ»§Ñ¡ÔñÁË¼Ç×¡ÃÜÂë
-									// ½«ÓÃ»§ÊäÈëµÄÃÜÂë´æÈë´¢´æÖĞ£¬¼üÎªuserName
+									// å¦‚æœç”¨æˆ·é€‰æ‹©äº†è®°ä½ç”¨æˆ·å
+									// å°†ç”¨æˆ·è¾“å…¥çš„ç”¨æˆ·åå­˜å…¥å‚¨å­˜ä¸­ï¼Œé”®ä¸ºuserName
+									// å¦‚æœç”¨æˆ·é€‰æ‹©äº†è®°ä½å¯†ç 
+									// å°†ç”¨æˆ·è¾“å…¥çš„å¯†ç å­˜å…¥å‚¨å­˜ä¸­ï¼Œé”®ä¸ºuserName
 									SharedPreferences.Editor editor;
 									preferences2 = getSharedPreferences(
 											"UserInfo1", MODE_PRIVATE);
@@ -118,7 +118,7 @@ public class LoginActivity extends Activity implements OnClickListener {
 
 			else {
 
-				Toast.makeText(LoginActivity.this, "´ËÕË»§²»ÊÇ¹ÜÀíÔ±ÕË»§", 1).show();
+				Toast.makeText(LoginActivity.this, "æ­¤è´¦æˆ·ä¸æ˜¯ç®¡ç†å‘˜è´¦æˆ·", 1).show();
 			}
 		}
 	}
